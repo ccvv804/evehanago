@@ -121,7 +121,7 @@ func eve(filename string) {
 	onech := byte(0x01)
 	twoch := byte(0x02)
 	if findch == onech {
-		fmt.Println("1채널")
+		fmt.Println("mono audio")
 		adpcmdata := dat[54:]
 		pcmdata:=maya(adpcmdata)
 		wavdata:=[]byte{0x52, 0x49, 0x46, 0x46}
@@ -153,7 +153,7 @@ func eve(filename string) {
 		}
 
 	} else if findch == twoch {
-		fmt.Println("2채널")
+		fmt.Println("stereo audio")
 		adpcmdata := dat[54:]
 		leftadpcmdata := []byte{}
 		rightadpcmdata := []byte{}

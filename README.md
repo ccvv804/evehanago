@@ -1,7 +1,7 @@
 # evehana (golang)
 hana ICM audio extractor (golang)
 <pre><code>go build eve.go
-eve.exe -file 1234.ICM
+eve.exe -file sample.ICM
 </code></pre>
 hana ICM 오디오를 wav로 변환해주는 추출기 입니다. 
 
